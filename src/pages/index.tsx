@@ -47,7 +47,7 @@ export default function Home() {
       return todo;
     });
     setTodos(updatedTodos);
-  }, [setTodos]);
+  }, [todos]); // dependency array includes todos
 
   const displayTodoList = (todoList:Todo[]) => {
     return (
