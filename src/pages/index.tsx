@@ -32,8 +32,7 @@ export default function Home() {
       isUrgent: false,
     };
 
-    todos.push(newTodo);
-    setTodos(todos);
+    setTodos([...todos, newTodo]); // Update state immutably
   };
 
   const deleteTodo = (id: number) => {
