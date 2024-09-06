@@ -66,7 +66,7 @@ export default function Home() {
       if (displayUrgent) {
         return !x.isCompleted && x.isUrgent === displayUrgent;
       } else {
-        return !x.isCompleted && x.isUrgent !== displayUrgent;
+        return !x.isCompleted && !x.isUrgent; // item is incomplete and not urgent
       }
     }));
   };
